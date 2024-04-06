@@ -13,10 +13,13 @@ class SplashView extends StatelessWidget {
         builder: (context, viewModel, child) => const Scaffold(
               backgroundColor: Colors.black,
               body: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
-                    "Ml Kit Examples",
-                    style: TextStyle(fontSize: 24),
+                  Center(
+                    child: Text(
+                      "Ml Kit Examples",
+                      style: TextStyle(fontSize: 30, color: Colors.white),
+                    ),
                   )
                 ],
               ),
