@@ -8,7 +8,7 @@ class AkademiMlKit extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Yapay Zeka App',
       navigatorKey: StackedService.navigatorKey,
       onGenerateRoute: StackedRouter().onGenerateRoute,
       navigatorObservers: [StackedService.routeObserver],
