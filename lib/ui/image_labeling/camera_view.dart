@@ -73,7 +73,10 @@ class _CameraViewState extends State<CameraView> {
   }
 
   Widget _liveFeedBody() {
-    if (_cameras.isEmpty) return Container();
+    if (_cameras.isEmpty)
+      return Container(
+        color: Colors.orange,
+      );
     if (_controller == null) return Container();
     if (_controller?.value.isInitialized == false) return Container();
     return Container(
