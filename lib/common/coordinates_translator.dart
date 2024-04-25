@@ -1,4 +1,4 @@
-/* import 'dart:io';
+import 'dart:io';
 import 'dart:ui';
 
 import 'package:camera/camera.dart';
@@ -50,4 +50,3 @@ double translateY(
       return y * canvasSize.height / imageSize.height;
   }
 }
- */

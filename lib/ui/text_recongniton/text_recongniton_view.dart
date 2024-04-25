@@ -28,14 +28,23 @@ class _TextRecognitionViewState extends State<TextRecognitionView> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Colors.white,
+      appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            // Geri tuşu eylemi burada gerçekleştirilir.
+            Navigator.of(context).pop();
+          },
+        ),
+      ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Center(
             child: Text(
-              "Face Detection",
+              "Text Recognition",
               style: TextStyle(fontSize: 30, color: Colors.black),
             ),
           )
